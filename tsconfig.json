@@ -1,29 +1,18 @@
 {
   "compilerOptions": {
-    "outDir": "build/dist",
-    "module": "esnext",
-    "target": "es5",
-    "lib": ["es6", "dom"],
-    "sourceMap": true,
-    "allowJs": true,
-    "jsx": "react",
-    "moduleResolution": "node",
-    "rootDir": "src",
-    "forceConsistentCasingInFileNames": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "noUnusedLocals": true
+    "outDir": "./public/",
+    //   "sourceMap": true,
+    "experimentalDecorators": true,
+    // set to false for now to be hassle free
+    "noImplicitAny": false,
+    // this affects when you are importing other libraries
+    // i tried es6 but error importing material ui
+    "module": "commonjs",
+    // "module": "ES6",
+    // es5 guarantees support in all browsers
+    // es6 or es2015 has been supported by major browsers
+    "target": "es6",
+    "jsx": "react"
   },
-  "exclude": [
-    "node_modules",
-    "build",
-    "scripts",
-    "acceptance-tests",
-    "webpack",
-    "jest",
-    "src/setupTests.ts"
-  ]
+  "include": ["./src/**/*"]
 }
