@@ -9,7 +9,7 @@ const styles = {
 
 class App extends React.Component<any, any> {
   render() {
-    return "hello"
+    return "hello cool"
   }
 }
 
