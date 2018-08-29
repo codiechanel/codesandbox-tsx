@@ -1,11 +1,11 @@
 import * as React from "react";
 import { render } from "react-dom";
-import Hello from "./Hello";
-
-const styles = {
-  fontFamily: "sans-serif",
-  textAlign: "center"
-};
+// import Hello from "./Hello";
+//
+// const styles = {
+//   fontFamily: "sans-serif",
+//   textAlign: "center"
+// };
 
 class App extends React.Component<any, any> {
   render() {
